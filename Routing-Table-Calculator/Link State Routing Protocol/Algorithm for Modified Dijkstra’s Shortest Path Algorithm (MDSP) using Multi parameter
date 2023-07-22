@@ -1,0 +1,16 @@
+begin
+    if c = d then;
+    else if c = t then
+        d: = d * s;
+    else
+        d: = d* z;
+    return d;
+end
+
+
+where 
+c = choice 
+d = distance 
+t = time 
+s = time factor 
+z = congestion factor
