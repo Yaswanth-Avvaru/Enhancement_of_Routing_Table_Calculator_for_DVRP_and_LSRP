@@ -1,0 +1,16 @@
+begin
+    for each vertex v in Graph do
+        alternate_path[i]: =NULL;
+        dist[v]: = infinity;
+        weight_update(choice);
+    for each vertex v in Graph do
+        if v = source or v = destination then
+            for each neighbour u of v do
+                if alternate_path[i] > dist[u] +distance(u,v) then
+                    alternate_path[i]: = dist[u] +distance(u,v);
+                end if
+            end for
+        end if
+    end for
+    end for
+end
