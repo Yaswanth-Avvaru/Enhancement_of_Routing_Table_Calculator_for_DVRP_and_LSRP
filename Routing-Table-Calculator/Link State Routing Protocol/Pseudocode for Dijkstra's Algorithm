@@ -1,0 +1,16 @@
+for each vertex u ∈ G (Graph)
+    d[u] = infinity;
+    parent[u] = NIL;
+end for
+
+d[s] = 0; // s is the start point
+H = {s}; // the heap
+
+while NotEmpty(H) and targetNotFound:
+    u = Extract_Min(H);
+    label u as examined;
+    for each vertex v adjacent to u:
+        if d[v] > d[u] + w[u, v]:
+            d[v] = d[u] + w[u, v];
+            parent[v] = u;
+            DecreaseKey[v, H];
