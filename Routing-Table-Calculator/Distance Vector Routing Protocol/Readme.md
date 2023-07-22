@@ -18,7 +18,7 @@ You can view the entered details in the table rendered beside. If you wish to mo
 On completion of entering the details of all nodes then click on Calculate button below the table. Upon clicking the button all the details will be sent to the server and then the BFA Algorithm implemented will use these details and compute the Routing tables and return it to the client side for displaying it in the Routing table Calculator of new frame Routing Table.
 
 
-Procedure and Snap shots :
+**Procedure and Snap shots :**
 
 1. Compile the Server code first.
    
