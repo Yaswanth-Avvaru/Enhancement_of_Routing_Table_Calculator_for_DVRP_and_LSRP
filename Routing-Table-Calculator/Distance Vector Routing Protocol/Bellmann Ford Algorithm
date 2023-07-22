@@ -1,0 +1,17 @@
+For each node ‘x’, 
+Initialize the graph
+For all destinations ‘y’ in ‘N’:
+    if (y is a neighbor): 
+        Dx (y) = c (x, y) 
+    else: 
+        c (x, y) = ∞
+
+For each neighbour ‘w’
+    Send the Distance Vector Dx = [ Dx(y): y in N] to w
+
+Loop
+    standby (until vector received from any neighbour ‘w’)
+    For each ‘y’ in ‘N’:
+        Dx(y) = min {c (x, v) + Dv (y)}
+        If Distance Vector [Dx(y)] is modified for any ‘y’:
+            Send the updated/modified Distance Vector
